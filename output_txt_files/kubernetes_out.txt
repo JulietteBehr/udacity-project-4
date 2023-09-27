@@ -1,1 +1,22 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh
+error: failed to create deployment: deployments.apps "project-app" already exists
+Error from server (AlreadyExists): pods "project-app" already exists
+NAMESPACE     NAME                               READY   STATUS    RESTARTS        AGE
+default       project-app                        1/1     Running   0               2m25s
+default       project-app-74d9fd8fdc-jv7qd       1/1     Running   0               2m25s
+kube-system   coredns-5d78c9869d-8gk4m           1/1     Running   0               4m45s
+kube-system   etcd-minikube                      1/1     Running   0               4m59s
+kube-system   kube-apiserver-minikube            1/1     Running   0               4m58s
+kube-system   kube-controller-manager-minikube   1/1     Running   0               4m58s
+kube-system   kube-proxy-q8d8j                   1/1     Running   0               4m45s
+kube-system   kube-scheduler-minikube            1/1     Running   0               4m58s
+kube-system   storage-provisioner                1/1     Running   1 (4m14s ago)   4m56s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
