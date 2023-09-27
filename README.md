@@ -36,6 +36,12 @@ source .devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
+* Create a Docker account and login - verify using `docker --version`
+
+* Install minikube: 
+`curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube`
+
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
